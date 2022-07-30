@@ -1,6 +1,7 @@
 // components
 import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <main className="App">
       <Navbar />
       <Gallery />
+      <Footer />
     </main>
   );
 }
