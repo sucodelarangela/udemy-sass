@@ -38,3 +38,12 @@
         filter: grayscale(0%)
         &::after
             opacity: .5
+
+// media queries
+@mixin mobile
+    @media screen and (max-width: 425px)
+        @content
+
+@mixin tablet()
+    @media screen and (max-width: 1080px)
+        @content

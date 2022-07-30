@@ -6,6 +6,10 @@
     justify-content: space-between
     // using mixins/functions
     @include mixins.container
+    // media query
+    @include mixins.mobile
+    @include mixins.tablet
+        padding: 1.1rem
     &__brand // .header__brand
         color: variables.$primary-color
         font-size: 3rem
@@ -13,6 +17,9 @@
         ul
             height: 100%
             @include mixins.flex-center
+            @include mixins.mobile
+            @include mixins.tablet
+                display: none
             li
                 margin: 0 1rem
                 text-transform: uppercase
@@ -27,6 +34,9 @@
         ul
             @include mixins.flex-center
             width: 100%
+            @include mixins.mobile
+            @include mixins.tablet
+                display: none
             li
                 margin: 0 1rem
                 a

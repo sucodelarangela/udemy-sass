@@ -7,6 +7,11 @@
     flex-wrap: wrap
     justify-content: space-between
     padding: 0
+    @include mixins.mobile
+        flex-direction: column
+    @include mixins.tablet
+        width: 90%
+        justify-content: center
     &__card // .gallery__card
         width: 31%
         height: 400px
@@ -14,6 +19,10 @@
         @include mixins.flex-center
         flex-direction: column
         color: variables.$primary-color
+        @include mixins.mobile
+        @include mixins.tablet
+            width: 90%
+            margin-bottom: 6%
         &--title // .gallery__card--title
             font-size: 2rem
             font-weight: 300
