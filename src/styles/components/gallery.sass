@@ -1,0 +1,35 @@
+@use '../variables'
+@use '../mixins'
+
+.gallery
+    @include mixins.flex-center
+    @include mixins.container
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0
+    &__card // .gallery__card
+        width: 31%
+        height: 400px
+        margin-bottom: 4%
+        @include mixins.flex-center
+        flex-direction: column
+        color: variables.$primary-color
+        &--title // .gallery__card--title
+            font-size: 2rem
+            font-weight: 300
+            margin-bottom: 1rem
+        &--btn
+            padding: .6rem 2rem
+            border: 2px solid variables.$primary-color
+            color: variables.$primary-color
+            font-weight: 400
+            text-transform: uppercase
+            letter-spacing: 1px
+            &:hover
+                background-color: variables.$primary-color
+                color: variables.$bg-color
+    // loops using for
+    $card: 9
+    @for $i from 1 through $card
+        #card-#{$i}
+            @include mixins.bg-image
