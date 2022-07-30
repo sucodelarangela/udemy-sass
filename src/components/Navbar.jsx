@@ -1,5 +1,7 @@
 import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
 
+import '../styles/components/navbar.sass';
+
 const Navbar = () => {
     return (
         <header className="header">
