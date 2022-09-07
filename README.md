@@ -18,7 +18,7 @@ Isso resultou em algumas estilizações feitas de maneira diferente do que foi p
 | 🪧 Vitrine.Dev |     |
 | ------------- | --- |
 | ✨ Nome        | **Galleria** - Udemy |
-| 🏷️ Tecnologias | React, JavaScript, Sass, Vite |
+| 🏷️ Tecnologias | React, Sass, Vite, JavaScript |
 | 🚀 URL         | [**https://udemy-sass.vercel.app/**](https://udemy-sass.vercel.app/)  |
 | 🔥 Desafio     | [**Conteúdo do curso**](https://www.udemy.com/course/sass-crie-o-seu-primeiro-projeto/) |
 
